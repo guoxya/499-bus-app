@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+ 	<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDepartAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
+        android:checked="true"
+        android:text="@string/checkboxDepartureAlarm1" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonAlarmOK"
+        android:layout_below="@+id/checkBoxDepartAlarm"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/textMinutesAway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/numberPicker1"
+        android:layout_marginBottom="75dp"
+        android:layout_toRightOf="@+id/numberPicker1"
+        android:text="@string/textMinutesAway"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/checkBoxArriveAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/textView1"
+        android:checked="true"
+        android:text="@string/checkboxArrivalAlarm" />
+
+    <Button
+        android:id="@+id/buttonAlarmOK"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="27dp"
+        android:text="OK" />
+
+    <NumberPicker
+        android:id="@+id/NumberPicker01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numberPicker1"
+        android:layout_below="@+id/checkBoxArriveAlarm" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/NumberPicker01"
+        android:layout_marginBottom="75dp"
+        android:layout_toRightOf="@+id/NumberPicker01"
+        android:text="@string/textMetersAway"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/NumberPicker01"
+        android:layout_alignLeft="@+id/textView1"
+        android:ems="10"
+        android:text="@string/textDefaultDestination" >
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
